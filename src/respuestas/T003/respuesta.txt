@@ -1,0 +1,16 @@
+Aquí te dejo la consulta SQL que responde a la petición del usuario:
+
+```sql
+SELECT s.*
+FROM students s
+JOIN classrooms c ON s.classroom_id = c.classroom_id
+WHERE c.tag = 'B' 
+  AND (s.last_name LIKE '%M%' OR LEFT(s.first_name, 1) LIKE 'M%');
+```
+
+La explicación es la siguiente:
+
+* Primero, se hace un JOIN entre la tabla de estudiantes (`students`) y la tabla de salones (`classrooms`), utilizando la columna `classroom_id` como clave foránea.
+* Luego, se utiliza una condición WHERE para filtrar los resultados. La primera parte de la condición (`c.tag = 'B'`) verifica que el tag del salon sea 'B', es decir, sección B.
+* La segunda parte de la condición (`AND (s.last_name LIKE '%M%' OR LEFT(s.first_name, 1) LIKE 'M%')`) filtra los estudiantes cuyo apellido o segundo nombre comience con la letra M. El operador `LIKE` permite buscar patrones en cadenas de texto, y el operador `%` es un wildcard que representa cero o más caracteres.
+* Finalmente, se seleccionan todas las columnas (`s.*`) de la tabla estudiantes utilizando el alias `s`.

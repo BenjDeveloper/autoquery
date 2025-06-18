@@ -1,0 +1,4 @@
+SELECT s.*
+FROM students s
+JOIN classrooms c ON s.classroom_id = c.classroom_id
+WHERE c.tag = 'B';

@@ -1,0 +1,5 @@
+SELECT s.*
+FROM students s
+JOIN classrooms c ON s.classroom_id = c.classroom_id
+WHERE c.tag = 'B' 
+  AND (s.last_name LIKE '%M%' OR LEFT(s.first_name, 1) LIKE 'M%');

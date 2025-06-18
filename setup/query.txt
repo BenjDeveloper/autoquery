@@ -1,0 +1,1 @@
+Extrae toda la informacion de todos los alumnos de la seccion A que tengan como primera letra de su primer nombre la letra A los demas ignoralos

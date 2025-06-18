@@ -1,0 +1,12 @@
+A continuación te presento la consulta SQL solicitada:
+```sql
+SELECT s.*
+FROM students s
+JOIN classrooms c ON s.classroom_id = c.classroom_id
+WHERE c.tag = 'B';
+```
+La explicación de la consulta es la siguiente:
+
+* Seleccionamos todas las columnas (`*`) del table `students` (s) con el alias `s`.
+* Hacemos un JOIN con la tabla `classrooms` (c) en la columna `classroom_id`, que relaciona a los estudiantes con sus respectivos aulas.
+* En la clausula WHERE, especificamos que queremos obtener solo aquellos registros cuyo campo `tag` de la tabla `classrooms` sea igual a 'B', lo que nos dará todos los estudiantes de la sección B.

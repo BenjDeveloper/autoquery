@@ -1,0 +1,11 @@
+student_id,first_name,last_name,email,address,admission_date,classroom_id
+2,Ethan,Anderson,ethan.anderson@school.com,995 Anderson Street,2022-01-10,2
+5,Liam,Garcia,liam.garcia@school.com,201 Garcia Street,2022-01-10,2
+8,Benjamin,Thompson,benjamin.thompson@school.com,505 Thompson Street,2022-01-10,2
+11,Sophia,Smith,sophia.smith@school.com,890 Smith Street,2022-01-10,2
+14,James,Taylor,james.taylor@school.com,101 Taylor Street,2022-01-10,2
+17,Elijah,Davis,elijah.davis@school.com,183 Davis Street,2022-01-10,2
+20,Emily,White,emily.white@school.com,315 White Street,2022-01-10,2
+23,Sebastian,Jackson,sebastian.jackson@school.com,630 Jackson Street,2022-01-10,2
+26,Grace,Thomas,grace.thomas@school.com,134 Thomas Street,2022-01-10,2
+29,Jack,Davis,jack.davis@school.com,422 Davis Street,2022-01-10,2

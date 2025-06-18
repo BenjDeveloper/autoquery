@@ -1,0 +1,13 @@
+Aquí tienes la consulta SQL que responde a la petición del usuario:
+```sql
+SELECT s.*
+FROM students s
+JOIN classrooms c ON s.classroom_id = c.classroom_id
+WHERE c.tag = 'B';
+```
+Explicación:
+
+* La consulta se enfoca en los estudiantes (students) y busca aquellos que pertenecen a una clase específica (classroom).
+* Se hace un JOIN entre la tabla students y classrooms utilizando el campo classroom_id, que es común a ambas tablas.
+* El WHERE clausula especifica que se buscan solo las clases cuyo tag sea 'B'.
+* La consulta selecciona todas las columnas relevantes de la tabla students (s.*) utilizando el alias s.
